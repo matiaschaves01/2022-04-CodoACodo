@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0%;
+   
+}
+html {
+    height: 100%;
+}
+
+body{
+   
+  background-color: rgb(0, 126, 131);
+}
+
+.grid-container > *{
+
+
+border-radius: 4px;
+padding: 10px;
+text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax 250px, 1fr);
+    grid-template-areas: "header" "nav nav nav" "section section section" "main main" "footer footer footer" ;
+    grid-auto-rows: minmax(200px,auto);
+    
+}
+
+.item1{
+    grid-column: 1 / span 4 ;
+
+}
+.header{
+    
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+
+.menu{
+    list-style: none;
+    padding: 0px 10px;
+    background-color: khaki;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+    padding: 14px 20px;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+}
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu Li a:hover{
+    background-color: silver;
+}
+
+.ul{
+    display:flex;
+    list-style: none;
+}
+
+main{
+    background-color: transparent;
+}
+
+
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color:orange;
+}
+
+@media (min-whidth: 150px)  { 
+.grid-container {
+    grid-template: 
+    "header header" auto
+    "nav nav nav nav" 150px
+    "section section" auto
+    "footer footer" 100px /
+    100px auto 
+    ; 
+   } 
+}  
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow:wrap
+
+}
+
+.container{
+    width: 90%;
+    margin: 50%;
+}
+.heading{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50%; 
+}
+.card{
+    width: 20%;
+    background:transparent ;
+    border: 1px solid silver;
+    transition: 0.3s;
+
+}
+.card-hader{
+    text-align: center;
+    padding: 50px 10px;
+    background:  linear-gradient( to right, ) ;
+    color:  #fff;
+}
+.card-body{
+    padding: 30px 20px;
+    text-align: center;
+    font-size:18px;
+}
+ .card-body.btn{
+     display: block;
+     color: #fff;
+     text-align: center;
+     background: linear-gradient(to rigth, #ff416c,#ff4b2b );
+     margin-top: 30px;
+     text-decoration: none;
+     padding: 10px 5px;
+
+ }
+ .card:hover{
+     transform: scale(1.05);
+     box-shadow: 0 0 40px -10px rgba(0, 0 ,0 ,0.25);
+ }
+
+ @media scren and(max-width:1000px) {
+     .card {
+         width: 40%;
+        }
+     
+   }
+   @media scren and(min-width:620px) {
+
+    .container{
+        width: 100%;
+    }
+
+    .heading{
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    .card {
+        width: 80%;
+       }
+    
+  }
