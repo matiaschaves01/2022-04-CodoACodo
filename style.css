@@ -162,6 +162,48 @@ header{
       padding: 10px;
 
   }
+
+  main{
+    width: 940px;
+    margin: 0 auto ;
+    margin-top: 8%;
+
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+form input{
+    display: block;
+    margin: 0 0 39px;
+    padding:  12px 25px;
+    width: 40%;
+}
+
+.boton-enviar{
+    width: 35%;
+    padding: 95px 40;
+    margin: 22px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background: rgb(14, 99, 133);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.boton-enviar:hover{
+    background: rgb(9, 62, 117);
+    transform: scale(1.2);
+}
+
  
   @media (max-whidth: 767px){
      .footer-col {
