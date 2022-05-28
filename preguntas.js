@@ -44,7 +44,7 @@ preguntas.forEach((pregunta) => {
 				elemento.querySelector('.respuesta').style.maxHeight = null;
 			}
 		});
-
+ 
 
 	});  
 });
