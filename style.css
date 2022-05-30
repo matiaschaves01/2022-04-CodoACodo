@@ -35,6 +35,7 @@ body {
 .grid-container {
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 .grid-container .espaciador {
@@ -466,4 +467,13 @@ header {
     .categorias {
         grid-template-columns: 1fr;
     }
+}
+
+.espaciador {
+    flex-grow: 1;
+}
+
+.registro-main {
+    padding: 0 15px;
+    margin-bottom: 15px;
 }
