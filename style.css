@@ -50,7 +50,7 @@ h1 {
 header {
 
     width: 100%;
-
+    margin-bottom: 15px;
 }
 
 .menu {
@@ -89,7 +89,7 @@ header {
     width: 100%;
     max-width: 1200px;
     display: flex;
-    margin-top: 8rem !important;
+    margin-top: 2rem !important;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
@@ -131,6 +131,7 @@ header {
 .footer {
     background-color: rgb(36, 38, 46);
     padding: 6px 1px;
+    margin-top: 15px;
 }
 
 .conteiner-pie {
@@ -471,9 +472,4 @@ header {
 
 .espaciador {
     flex-grow: 1;
-}
-
-.registro-main {
-    padding: 0 15px;
-    margin-bottom: 15px;
 }
